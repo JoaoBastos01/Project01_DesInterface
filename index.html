@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Gráfico de Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabeçalho">
+        <h1>Personalize o Cartão</h1>
+    </header>
+    <div class="container">
+        <div id="painel">
+            <div id="cartao">
+                <h2 id="titulo">Título do Cartão</h2>
+                <p id="conteudo">Este é o conteúdo do cartão. Personalize-o!</p>
+            </div>
+        </div>
+
+        <div class="controles">
+            <label for="cor-fundo">Cor de Fundo:</label>
+            <input type="color" id="cor-fundo" value="#ffffff">
+
+            <label for="tamanho-borda">Tamanho da Borda:</label>
+            <input type="range" id="tamanho-borda" min="1" max="20" value="2">
+
+            <label for="cor-borda">Cor da Borda:</label>
+            <input type="color" id="cor-borda" value="#000000">
+
+            <label for="tamanho-texto">Tamanho do Texto:</label>
+            <input type="range" id="tamanho-texto" min="10" max="40" value="16">
+
+            <label for="novo-texto">Novo Texto do Cartão:</label>
+            <input type="text" id="novo-texto" placeholder="Digite o novo texto">
+
+            <label for="novo-titulo">Novo título do Cartão:</label>
+            <input type="text" id="novo-titulo" placeholder="Digite o novo titulo">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
